@@ -5,9 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
   </head>
-  <!-- This is the body of the website -->
-  <!-- Body starts here -->
   <body>
-    <h1>Hi! I am Kamlesh Kumar</h1>
+    <header>
+      <!-- Navigation Bar starts -->
+      <nav>
+        <div>
+          <!-- Logo or test of website -->
+          <h6>KK</h6>
+        </div>
+        <div>
+          <a href="#about">About</a>
+          <a href="./blog.html">Blog</a>
+          <a href="#projects">Projects</a>
+          <a href="connect">connect</a>
+        </div>
+      </nav>
+      <!-- Navigation Bar ends -->
+    </header>
+    <!-- About section -->
+    <section id="about">
+      <h1>Hi, I am Kamlesh Kumar</h1>
+      <p>
+        I am an Electrical Engineer passionate about analog and digital
+        circuits.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <!-- Project-1 -->
+        <div class="card">
+          <h3>Tic Tac Toe Game</h3>
+          <p>I made a Tic Tac Toe Game using python only.</p>
+        </div>
+        <!-- Project-2 -->
+        <div class="card">
+          <h3>PV energy management system for islanded microdrid</h3>
+          <p>
+            My B.Tech final year is a hardware based photovoltaic energy
+            management system for islanded microdrid.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect section -->
+    <section id="connect">
+      <h2>Connect me</h2>
+      <form
+        action="https://formsubmit.co/hykamleshkumar@gmail.com"
+        method="post"
+      >
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" placeholder="Name" required /><br /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="E-mail"
+          required
+        /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <input
+          type="text"
+          id="message"
+          placeholder="Your message"
+          required
+        /><br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 My portfolio | All rights reserved</p>
+    </footer>
   </body>
 </html>
