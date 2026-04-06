@@ -3,51 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <!-- Navigation Bar starts -->
       <nav>
-        <div>
+        <div class="logo">
           <!-- Logo or test of website -->
-          <h6>KK</h6>
+          Logo
         </div>
         <div>
-          <a href="#about">About</a>
-          <a href="./blog.html">Blog</a>
-          <a href="#projects">Projects</a>
-          <a href="#connect">connect</a>
+          <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
         </div>
       </nav>
       <!-- Navigation Bar ends -->
     </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-content">
+        <h1>Hi, I am Kamlesh Kumar</h1>
+        <p>I am a passionate electrical engineer</p>
+        <a href="./projects.html" class="btn">View my work</a>
+      </div>
+    </section>
+
     <!-- About section -->
     <section id="about">
-      <h1>Hi, I am Kamlesh Kumar</h1>
+      <h2>About me</h2>
       <p>
-        I am an Electrical Engineer passionate about analog and digital
-        circuits.
+        Bachelor of Technology(Electrical Engineering) | Government Engineering
+        College, Palamu
       </p>
+      <p>Diploma(Electrical Engineering) | Government Polytechnic Ranchi</p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>My Work</h2>
       <div class="projects">
-        <!-- Project-1 -->
-        <div class="card">
+        <div class="project">
+          <img src="" alt="Project-1" />
           <h3>Tic Tac Toe Game</h3>
-          <p>I made a Tic Tac Toe Game using python only.</p>
+          <p>I made a Tic Tac Toe Game using python.</p>
         </div>
-        <!-- Project-2 -->
-        <div class="card">
-          <h3>PV energy management system for islanded microdrid</h3>
+        <div class="project">
+          <img src="" alt="Project-2" />
+          <h3>PV energy management system for islanded microgrid</h3>
           <p>
-            My B.Tech final year is a hardware based photovoltaic energy
-            management system for islanded microdrid.
+            My B.Tech final year is a hardware based Photovoltaic energy
+            management system.
           </p>
         </div>
+        <a href="./projects.html" class="btn">View all</a>
       </div>
     </section>
 
@@ -55,6 +71,7 @@
     <section id="connect">
       <h2>Connect me</h2>
       <form
+        id="connect-form"
         action="mailto:hykamleshkumar@gmail.com"
         method="post"
         enctype="text/plain"
